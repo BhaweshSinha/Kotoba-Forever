@@ -1,0 +1,223 @@
+/* ------------------ RESPONSIVE DESIGN ------------------ */
+
+/* Tablets & small laptops */
+@media (max-width: 1024px) {
+  .author-sidebar {
+    width: 240px;
+  }
+
+  .main-content {
+    padding: 1.2rem;
+  }
+}
+
+/* Mobile & narrow screens */
+@media (max-width: 900px) {
+  .layout {
+    flex-direction: column;
+  }
+
+  .author-sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+    border-right: none;
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  .author-sidebar img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .main-nav a {
+    display: inline-block;
+    margin-bottom: 6px;
+  }
+}
+
+/* Very small phones */
+@media (max-width: 480px) {
+  body {
+    font-size: 0.95rem;
+  }
+
+  .author-title {
+    font-size: 0.75rem;
+  }
+
+  .author-sidebar h2 {
+    font-size: 1.1rem;
+  }
+
+  .profession {
+    font-size: 0.85rem;
+  }
+
+  .bio {
+    font-size: 0.85rem;
+  }
+
+  .tab {
+    font-size: 0.75rem;
+    padding: 0.35rem 0.6rem;
+  }
+
+  .main-header h1 {
+    font-size: 1.4rem;
+  }
+}
+
+/* RESET */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: #f9fafb;
+  color: #1f2937;
+}
+
+/* LAYOUT */
+.layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* LEFT SIDEBAR */
+.author-sidebar {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  width: 280px;
+  background: #ffffff;
+  padding: 1.2rem;
+  border-right: 1px solid #e5e7eb;
+  overflow-y: auto;
+}
+
+.author-sidebar img {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 0.8rem;
+}
+
+.author-sidebar h2 {
+  text-align: center;
+  margin-bottom: 0.2rem;
+}
+
+.profession {
+  text-align: center;
+  font-weight: 600;
+  color: #4b5563;
+  margin-bottom: 0.8rem;
+}
+
+.bio {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 0.8rem;
+}
+
+/* SOCIAL LINKS */
+.social-links {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.social-links a {
+  display: inline-block;
+  margin: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #2563eb;
+}
+
+/* TABS */
+.tabs {
+  text-align: center;
+}
+
+.tab {
+  display: inline-block;
+  background: #f3f4f6;
+  padding: 0.4rem 0.7rem;
+  border-radius: 6px;
+  margin: 4px;
+  font-size: 0.85rem;
+}
+
+/* RIGHT CONTENT */
+.main-content {
+  flex: 1;
+  padding: 1.5rem;
+}
+
+/* HEADER */
+.main-header {
+  margin-bottom: 1rem;
+}
+
+.main-header h1 {
+  margin-bottom: 0.3rem;
+}
+
+/* NAV */
+.main-nav {
+  background: #e5e7eb;
+  padding: 0.6rem;
+  border-radius: 6px;
+  margin-bottom: 1.2rem;
+}
+
+.main-nav a {
+  margin-right: 12px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #111827;
+}
+
+/* CONTENT CARDS */
+.card {
+  background: #ffffff;
+  padding: 1.2rem;
+  border-radius: 10px;
+  margin-bottom: 1.2rem;
+}
+
+.card ul {
+  padding-left: 1.2rem;
+}
+
+.card li {
+  margin-bottom: 0.4rem;
+}
+
+/* FOOTER */
+.main-footer {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+/* MOBILE VIEW */
+@media (max-width: 900px) {
+  .layout {
+    flex-direction: column;
+  }
+
+  .author-sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+    border-right: none;
+    border-bottom: 1px solid #e5e7eb;
+  }
+}
