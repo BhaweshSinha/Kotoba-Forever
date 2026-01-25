@@ -76,8 +76,19 @@
 body {
   margin: 0;
   font-family: system-ui, sans-serif;
-  background: #f9fafb;
+  background: white;
   color: #1f2937;
+}
+
+
+.logo-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-title img {
+  height: 180px;
 }
 
 /* LAYOUT */
@@ -152,6 +163,39 @@ body {
   margin: 4px;
   font-size: 0.85rem;
 }
+
+.site-title {
+  font-family: "Noto Serif JP", "Yu Mincho", "Hiragino Mincho Pro", serif;
+  line-height: 1.2;
+}
+
+.en-title {
+  font-size: 2.6rem;
+  font-weight: 600;
+  color: #1f2933;   /* soft ink black, not pure black */
+  letter-spacing: 0.04em;
+  font-family: "Playfair Display", serif;
+  color: #111827;   /* sumi black */
+  font-weight: 500;
+}
+
+.jp-title {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #1f2933;
+  letter-spacing: 0.02em;
+  font-family: "Hiragino Mincho Pro", "Yu Mincho", serif;
+  letter-spacing: 0.2em;}
+
+.en-title {
+  color: #111827;
+  font-weight: 500;
+}
+
+.jp-title {
+  color: #9ca3af;
+}
+
 
 /* RIGHT CONTENT */
 .main-content {
